@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  color: #0077cc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.bounce {
+  animation: bounce 0.8s ease-in-out;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}
+
+/* Themes */
+body.light {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+body.dark {
+  background-color: #222;
+  color: #f4f4f4;
+}
